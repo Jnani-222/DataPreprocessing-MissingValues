@@ -25,32 +25,32 @@ Provided a dataset with various columns representing different attributes or fea
 
 ### Handling Missing Values
 
-In this project, we adopt a pragmatic approach for handling missing values, taking into consideration the data type of the variable and its potential dependencies on other columns. Here's our general strategy:
+In this project, I adopt a pragmatic approach for handling missing values, taking into consideration the data type of the variable and its potential dependencies on other columns. Here's our general strategy:
 
 ### Numerical Variables
 
 For missing values in numerical variables:
-1. **Outlier Detection**: We begin by checking for outliers in the given numerical column using statistical methods or domain knowledge. If significant outliers are present, we choose to fill missing values with the **median** of the respective column. The median is robust to outliers and can provide a representative central tendency.
-2. **No Outliers**: In cases where no significant outliers are detected, we opt to fill missing values with the **mean** of the respective column. The mean is a suitable measure for central tendency when outliers are not a concern.
+1. **Outlier Detection**: I begin by checking for outliers in the given numerical column using statistical methods or domain knowledge. If significant outliers are present, I choose to fill missing values with the **median** of the respective column. The median is robust to outliers and can provide a representative central tendency.
+2. **No Outliers**: In cases where no significant outliers are detected, I opt to fill missing values with the **mean** of the respective column. The mean is a suitable measure for central tendency when outliers are not a concern.
 
 ### Categorical Variables
 
 For missing values in categorical variables:
-1. We fill missing values with the **mode** (the most frequent category) of the respective column.
+1. I fill missing values with the **mode** (the most frequent category) of the respective column.
 
 ### Dependency Consideration
 
-We also recognize that the choice of how to fill missing values may be influenced by the specific dataset and its dependencies. In some cases, the missing value strategy may vary based on the relationship between columns. It is advisable to perform exploratory data analysis and statistical tests to assess such dependencies, which may influence the choice between mean, median, or mode for filling missing values.
+I also recognize that the choice of how to fill missing values may be influenced by the specific dataset and its dependencies. In some cases, the missing value strategy may vary based on the relationship betIen columns. It is advisable to perform exploratory data analysis and statistical tests to assess such dependencies, which may influence the choice betIen mean, median, or mode for filling missing values.
 
 ## Data Analysis and Visualization
 
-In this script, we've taken a pragmatic approach to handle missing values without extensive data analysis and visualization. Here's why:
+In this script, I've taken a pragmatic approach to handle missing values without extensive data analysis and visualization. Here's why:
 
-- **No Heat Maps**: While heat maps and other visualizations can be powerful tools to explore relationships between columns, we've opted not to use them. This is because we have a basic understanding of the variables in the data and how they are interconnected. Our primary objective is to handle missing values efficiently and not to perform in-depth data analysis or correlation studies.
+- **No Heat Maps**: While heat maps and other visualizations can be poIrful tools to explore relationships betIen columns, I've opted not to use them. This is because I have a basic understanding of the variables in the data and how they are interconnected. Our primary objective is to handle missing values efficiently and not to perform in-depth data analysis or correlation studies.
 
-- **No Univariate Analysis**: We haven't conducted univariate analysis for any variable in this script. Univariate analysis can be valuable for understanding the distribution of individual variables, identifying outliers, and making data-driven decisions. However, our focus here is on addressing missing data, and we're not conducting a comprehensive analysis of the dataset.
+- **No Univariate Analysis**: I haven't conducted univariate analysis for any variable in this script. Univariate analysis can be valuable for understanding the distribution of individual variables, identifying outliers, and making data-driven decisions. HoIver, our focus here is on addressing missing data, and I're not conducting a comprehensive analysis of the dataset.
 
-We acknowledge that data analysis and visualization can be essential for many data science projects, but in this specific script, we've chosen to emphasize the missing value handling process. Feel free to incorporate visualizations and exploratory analysis in your data projects as per your specific needs and objectives.
+I acknowledge that data analysis and visualization can be essential for many data science projects, but in this specific script, I've chosen to emphasize the missing value handling process. Feel free to incorporate visualizations and exploratory analysis in your data projects as per your specific needs and objectives.
 
 ## Dependencies
 
