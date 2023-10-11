@@ -6,6 +6,16 @@ This README file provides an overview of the Python script used to handle missin
 
 The primary objective of this script is to handle missing values in a dataset containing information about different car types and their owners. The script applies various strategies to fill missing values, ensuring that the dataset is ready for analysis.
 
+## Note
+
+In this script, we've taken a pragmatic approach to handle missing values without extensive data analysis and visualization. Here's why:
+
+- **No Heat Maps or Visualizations**: While heat maps and other visualizations can be powerful tools to explore relationships between columns, we've opted not to use them. This is because we have a basic understanding of the variables in the data and how they are interconnected. Our primary objective is to handle missing values efficiently and not to perform in-depth data analysis or correlation studies.
+
+- **No Univariate Analysis**: We haven't conducted univariate analysis for any variable in this script. Univariate analysis can be valuable for understanding the distribution of individual variables, identifying outliers, and making data-driven decisions. However, our focus here is on addressing missing data, and we're not conducting a comprehensive analysis of the dataset.
+
+We acknowledge that data analysis and visualization can be essential for many data science projects, but in this specific script, we've chosen to emphasize the missing value handling process. Feel free to incorporate visualizations and exploratory analysis in your data projects as per your specific needs and objectives.
+
 ## Dependencies
 
 - numpy
