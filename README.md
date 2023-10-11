@@ -144,11 +144,11 @@ Please make sure you have these Python libraries installed to run the script suc
 2. Identify education categories with outliers wrt the income & jobs in the reference table.
 3. Replace salary values with the median for education categories that exhibit outliers, while maintaining the reference table for future reference.
 
-- Missing JOB values will be imputed based on a reference table containing mean salaries for distinct education and nearest income combinations.
+- Missing JOB values will be imputed based on a reference table for distinct education and nearest income combinations.
 
 ### Filling Remaining Missing Values
 
-- Complete missing EDUCATION values by referencing the salary-based table.
+- Complete missing EDUCATION values based on their income by referencing the salary-educatio-job based table.
 - Impute the remaining JOB values by considering EDUCATION  as previously described
 - Impute the remaining USE values by considering JOB as previously described.
   
