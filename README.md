@@ -1,6 +1,6 @@
 # Data Missing Value Handling in Python
 
-This README file provides an overview of the Python script used to handle missing values in a dataset. The script reads a dataset from an Excel file, explores the data, identifies missing values, and fills them using various strategies.
+This is  an overview of the Python script used to handle missing values in a dataset. The script reads a dataset from an Excel file, explores the data, identifies missing values, and fills them using various strategies.
 
 ## Overview
 
