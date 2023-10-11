@@ -84,8 +84,8 @@ Please make sure you have these Python libraries installed to run the script suc
 ### Filling Missing POSTAL CODE Values
 
 - Observe that CITY and POSTAL CODE columns are related.
-- Identify missing values in the CITY and POSTAL CODE columns.
-- Fill missing CITY values based on the known postal codes using a mapping dictionary.
+- Identify missing values in the POSTAL CODE columns.
+- Fill missing POSTAL CODE values based on the known city-postal codes using a mapping dictionary.
 - Manually fill missing POSTAL CODE values for specific rows.
 
 ### Filling Missing CITY Values
@@ -103,36 +103,56 @@ Please make sure you have these Python libraries installed to run the script suc
 
 ### Filling Missing EDUCATION Values
 
-- Fill missing EDUCATION values based on the JOB column and common patterns.
+- Observe that EDUCATION and JOB columns are related.
+- Fill missing EDUCATION values based on the JOB column, leveraging the job-specific mode of education to ensure data accuracy.
 
 ### Filling Missing SEX Values
 
-- Fill missing SEX values based on available data in the EDUCATION column.
+- Fill missing SEX values with the mode (most common value) of the SEX column.
 
 ### Filling Missing MARITAL STATUS Values
 
-- Fill missing MARITAL STATUS values based on common patterns in the dataset.
+- Observe the MARITAL STATUS column is dependent on SEX or EDUCATION column
+- Fill missing MARITAL STATUS values with the mode (most common value) of the MARITAL STATUS column.
 
 ### Filling Missing CAR AGE Values
 
-- Fill missing CAR AGE values with the mean (average) of the CAR AGE column.
+- Fill missing CAR AGE values with the mean (average) of the CAR AGE  column.
 
 ### Filling Missing MILES CLOCKED Values
 
-- Fill missing MILES CLOCKED values based on CAR TYPE.
+- Observe the MILES CLOCKEDS column is dependent on CAR AGE or CAR TYPE column
+- Fill missing  MILES CLOCKED values based on the CAR TYPE column, leveraging the (which are free from outliners)car type with specific mean of miles clocked, & remainning car type with specific median of miles clocked  to ensure data accuracy.
 
 ### Filling Missing USE Values
 
-- Fill missing USE values based on JOB and available patterns.
+- Observe that USE and JOB columns are related.
+- Fill missing USE values based on the JOB column, leveraging the job-specific mode of use to ensure data accuracy.
 
 ### Filling Missing INCOME Values
 
-- Fill missing INCOME values based on available data, including JOB, EDUCATION, and INCOME analysis.
+- Observe that  JOB, EDUCATION, and INCOME columns are related
+- Fill missing  INCOME values based on the JOB & EDUCATION column, leveraging the (which are free from outliners wrt income)JOB & EDUCATION with specific mean of INOME clocked, & remainning JOB & EDUCATION with specific median of INCOME  to ensure data accuracy.
+  
+### Filling Missing JOB Values
+
+- Observe that  JOB, EDUCATION, and INCOME columns are related
+- Fill missing JOB values based on available data, including JOB, EDUCATION, and INCOME analysis.
+- To achieve this:
+
+1. Create a reference table that computes the mean salary for each combination of education levels (rows) and job categories (columns).
+2. Identify education categories with outliers wrt the income & jobs in the reference table.
+3. Replace salary values with the median for education categories that exhibit outliers, while maintaining the reference table for future reference.
+
+This approach ensures that salary values are imputed based on both education and job categories, improving data accuracy.
+- Missing JOB values will be imputed based on a reference table containing mean salaries for distinct education and nearest income combinations.
 
 ### Filling Remaining Missing Values
 
-- Fill remaining missing EDUCATION, JOB, and USE values using various strategies.
-
+- Complete missing EDUCATION values by referencing the salary-based table.
+- Impute the remaining JOB values by considering EDUCATION  as previously described
+- Impute the remaining USE values by considering JOB as previously described.
+  
 ## Saving the Cleaned Dataset
 
 The script saves the cleaned dataset to an Excel file named "EDA_Finished_Cars.xlsx" without the index column.
