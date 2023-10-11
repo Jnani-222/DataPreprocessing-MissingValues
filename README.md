@@ -144,7 +144,6 @@ Please make sure you have these Python libraries installed to run the script suc
 2. Identify education categories with outliers wrt the income & jobs in the reference table.
 3. Replace salary values with the median for education categories that exhibit outliers, while maintaining the reference table for future reference.
 
-This approach ensures that salary values are imputed based on both education and job categories, improving data accuracy.
 - Missing JOB values will be imputed based on a reference table containing mean salaries for distinct education and nearest income combinations.
 
 ### Filling Remaining Missing Values
