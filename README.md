@@ -23,7 +23,7 @@ Provided a dataset with various columns representing different attributes or fea
 
 ## Note
 
-## Handling Missing Values
+### Handling Missing Values
 
 In this project, we adopt a pragmatic approach for handling missing values, taking into consideration the data type of the variable and its potential dependencies on other columns. Here's our general strategy:
 
@@ -46,7 +46,7 @@ We also recognize that the choice of how to fill missing values may be influence
 
 In this script, we've taken a pragmatic approach to handle missing values without extensive data analysis and visualization. Here's why:
 
-- **No Heat Maps or Visualizations**: While heat maps and other visualizations can be powerful tools to explore relationships between columns, we've opted not to use them. This is because we have a basic understanding of the variables in the data and how they are interconnected. Our primary objective is to handle missing values efficiently and not to perform in-depth data analysis or correlation studies.
+- **No Heat Maps**: While heat maps and other visualizations can be powerful tools to explore relationships between columns, we've opted not to use them. This is because we have a basic understanding of the variables in the data and how they are interconnected. Our primary objective is to handle missing values efficiently and not to perform in-depth data analysis or correlation studies.
 
 - **No Univariate Analysis**: We haven't conducted univariate analysis for any variable in this script. Univariate analysis can be valuable for understanding the distribution of individual variables, identifying outliers, and making data-driven decisions. However, our focus here is on addressing missing data, and we're not conducting a comprehensive analysis of the dataset.
 
