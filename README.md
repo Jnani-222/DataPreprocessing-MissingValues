@@ -25,7 +25,7 @@ Provided a dataset with various columns representing different attributes or fea
 
 ### Handling Missing Values
 
-In this project, I adopt a pragmatic approach for handling missing values, taking into consideration the data type of the variable and its potential dependencies on other columns. Here's our general strategy:
+In this project, I adopt a pragmatic approach for handling missing values, taking into consideration the data type of the variable and its potential dependencies on other columns. Here's my general strategy:
 
 ### Numerical Variables
 
@@ -40,7 +40,7 @@ For missing values in categorical variables:
 
 ### Dependency Consideration
 
-I also recognize that the choice of how to fill missing values may be influenced by the specific dataset and its dependencies. In some cases, the missing value strategy may vary based on the relationship betIen columns. It is advisable to perform exploratory data analysis and statistical tests to assess such dependencies, which may influence the choice betIen mean, median, or mode for filling missing values.
+I also recognize that the choice of how to fill missing values may be influenced by the specific dataset and its dependencies. In some cases, the missing value strategy may vary based on the relationship between columns. It is advisable to perform exploratory data analysis and statistical tests to assess such dependencies, which may influence the choice betIen mean, median, or mode for filling missing values.
 
 ## Data Analysis and Visualization
 
@@ -48,7 +48,7 @@ In this script, I've taken a pragmatic approach to handle missing values without
 
 - **No Heat Maps**: While heat maps and other visualizations can be poIrful tools to explore relationships betIen columns, I've opted not to use them. This is because I have a basic understanding of the variables in the data and how they are interconnected. Our primary objective is to handle missing values efficiently and not to perform in-depth data analysis or correlation studies.
 
-- **No Univariate Analysis**: I haven't conducted univariate analysis for any variable in this script. Univariate analysis can be valuable for understanding the distribution of individual variables, identifying outliers, and making data-driven decisions. HoIver, our focus here is on addressing missing data, and I're not conducting a comprehensive analysis of the dataset.
+- **No Univariate Analysis**: I haven't conducted univariate analysis for any variable in this script. Univariate analysis can be valuable for understanding the distribution of individual variables, identifying outliers, and making data-driven decisions. However, our focus here is on addressing missing data, and I're not conducting a comprehensive analysis of the dataset.
 
 I acknowledge that data analysis and visualization can be essential for many data science projects, but in this specific script, I've chosen to emphasize the missing value handling process. Feel free to incorporate visualizations and exploratory analysis in your data projects as per your specific needs and objectives.
 
@@ -122,7 +122,7 @@ Please make sure you have these Python libraries installed to run the script suc
 ### Filling Missing MILES CLOCKED Values
 
 - Observe the MILES CLOCKEDS column is dependent on CAR AGE or CAR TYPE column
-- Fill missing  MILES CLOCKED values based on the CAR TYPE column, leveraging the (which are free from outliners)car type with specific mean of miles clocked, & remainning car type with specific median of miles clocked  to ensure data accuracy.
+- Fill missing  MILES CLOCKED values based on the CAR TYPE column, leveraging the (which are free from outliners)car type with specific mean of miles clocked, & remaining car type with specific median of miles clocked  to ensure data accuracy.
 
 ### Filling Missing USE Values
 
