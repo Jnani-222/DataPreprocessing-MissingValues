@@ -5,6 +5,21 @@ This README file provides an overview of the Python script used to handle missin
 ## Overview
 
 The primary objective of this script is to handle missing values in a dataset containing information about different car types and their owners. The script applies various strategies to fill missing values, ensuring that the dataset is ready for analysis.
+Provided a dataset with various columns representing different attributes or features. Here's a brief description of the columns:
+
+1. INDEX: A unique identifier for each entry.
+2. INCOME: The income of the individual.
+3. MARITAL STATUS: The marital status of the individual (e.g., "Yes" or "No").
+4. SEX: The gender of the individual (e.g., "M" for male, "F" for female).
+5. EDUCATION: The highest level of education attained by the individual (e.g., "Bachelors," "High School," "Masters," etc.).
+6. JOB: The occupation or job category of the individual.
+7. TRAVEL TIME: Time spent traveling (in minutes).
+8. USE: The purpose of the car's use (e.g., "Commercial," "Private").
+9. MILES CLOCKED: The number of miles driven.
+10. CAR TYPE: The type of car (e.g., "Sports Car," "SUV," "Minivan," etc.).
+11. CAR AGE: The age of the car in years.
+12. CITY: The city where the individual resides.
+13. POSTAL CODE: The postal code of the individual's location.
 
 ## Note
 
