@@ -23,6 +23,27 @@ Provided a dataset with various columns representing different attributes or fea
 
 ## Note
 
+## Handling Missing Values
+
+In this project, we adopt a pragmatic approach for handling missing values, taking into consideration the data type of the variable and its potential dependencies on other columns. Here's our general strategy:
+
+### Numerical Variables
+
+For missing values in numerical variables:
+1. **Outlier Detection**: We begin by checking for outliers in the given numerical column using statistical methods or domain knowledge. If significant outliers are present, we choose to fill missing values with the **median** of the respective column. The median is robust to outliers and can provide a representative central tendency.
+2. **No Outliers**: In cases where no significant outliers are detected, we opt to fill missing values with the **mean** of the respective column. The mean is a suitable measure for central tendency when outliers are not a concern.
+
+### Categorical Variables
+
+For missing values in categorical variables:
+1. We fill missing values with the **mode** (the most frequent category) of the respective column.
+
+### Dependency Consideration
+
+We also recognize that the choice of how to fill missing values may be influenced by the specific dataset and its dependencies. In some cases, the missing value strategy may vary based on the relationship between columns. It is advisable to perform exploratory data analysis and statistical tests to assess such dependencies, which may influence the choice between mean, median, or mode for filling missing values.
+
+## Data Analysis and Visualization
+
 In this script, we've taken a pragmatic approach to handle missing values without extensive data analysis and visualization. Here's why:
 
 - **No Heat Maps or Visualizations**: While heat maps and other visualizations can be powerful tools to explore relationships between columns, we've opted not to use them. This is because we have a basic understanding of the variables in the data and how they are interconnected. Our primary objective is to handle missing values efficiently and not to perform in-depth data analysis or correlation studies.
